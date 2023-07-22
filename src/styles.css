@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%);
+    position: relative;
+  }
+
+  .header {
+    /* ... (existing styles) */
+    background-color: #007bff;
+    padding: 1rem 0;
+    text-align: center;
+    position: absolute; /* Add absolute positioning to the header */
+    top: 0;
+    width: 200%; /* Move the header to the horizontal center */
+    transform: translateX(-50%); /* Center the header horizontally */
+    color: #fff;
+    z-index: 1; /* Ensure the header is above the container */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header-title {
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .quiz-section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .options-container {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .option:hover {
+    background-color: #f1f1f1;
+  }
+  
+  input[type='radio'] {
+    margin-right: 0.5rem;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
